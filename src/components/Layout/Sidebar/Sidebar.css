@@ -1,0 +1,113 @@
+/* Aside */
+#Sidebar aside.aside-custom {
+  background-color: #343a40;
+  transition: width 0.3s ease;
+  -webkit-transition: width 0.3s ease;
+  -moz-transition: width 0.3s ease;
+}
+@media (max-width: 767px) {
+  #Sidebar aside.aside-custom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+  }
+  #Sidebar aside.aside-custom.toggled {
+    width: 250px;
+  }
+}
+@media (min-width: 768px) {
+  #Sidebar aside.aside-custom {
+    width: 250px;
+  }
+  #Sidebar aside.aside-custom.toggled {
+    width: 75px;
+  }
+  #Sidebar aside.aside-custom.toggled:hover {
+    width: 250px;
+  }
+  #Sidebar aside.aside-custom.toggled:hover > nav > a > span {
+    display: inline;
+  }
+}
+
+/* Brand link */
+a#Sidebar-brand-custom {
+  position: relative;
+  display: block;
+  height: 3.5rem;
+  border-bottom: 1px solid #4b545c;
+  font-size: 1.7rem;
+  font-weight: 300;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+a#Sidebar-brand-custom:hover {
+  color: white;
+}
+a#Sidebar-brand-custom img {
+  position: absolute;
+  top: 0.75rem;
+  left: 1.28rem;
+}
+a#Sidebar-brand-custom span {
+  position: absolute;
+  top: 0.5rem;
+  left: 4rem;
+}
+@media (min-width: 768px) {
+  #Sidebar aside.toggled a#Sidebar-brand-custom span {
+    opacity: 0;
+  }
+  #Sidebar aside.toggled:hover a#Sidebar-brand-custom span {
+    opacity: 1;
+  }
+}
+
+/* Nav list */
+.Sidebar-navlink {
+  display: block;
+  position: relative;
+  height: 2.5rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.1rem;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+}
+.Sidebar-navlink:hover {
+  color: white;
+}
+.Sidebar-navlink.active,
+.Sidebar-navlink.active:hover,
+.Sidebar-navlink.active:focus {
+  color: white;
+  background-color: #007bff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+.Sidebar-navlink i {
+  position: absolute;
+  top: 0.76rem;
+  left: 1.25rem;
+  margin-right: 0.5rem;
+}
+.Sidebar-navlink span {
+  position: absolute;
+  top: 0.45rem;
+  left: 3.1rem;
+}
+@media (min-width: 768px) {
+  #Sidebar aside.toggled .Sidebar-navlink span {
+    opacity: 0;
+  }
+  #Sidebar aside.toggled:hover .Sidebar-navlink span {
+    opacity: 1;
+  }
+}
+
+/* Mobile overlay */
+#Sidebar-mobile-overlay {
+  background-color: rgba(0, 0, 0, 0.2);
+}

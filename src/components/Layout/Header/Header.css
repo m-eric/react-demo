@@ -1,0 +1,31 @@
+#Header-navbar nav {
+  border-bottom: 1px solid #dee2e6;
+}
+
+#Header-navbar .navbar {
+  padding: 0.3rem 1rem;
+}
+
+#Header-toggle-sidebar {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+#Header-toggle-sidebar:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.Header-nav-item {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.Header-nav-item:hover {
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.Header-nav-link:hover {
+  text-decoration: none;
+}
